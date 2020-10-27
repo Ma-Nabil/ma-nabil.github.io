@@ -1,0 +1,363 @@
+/*
+
+primary: #6200EE rgb(98, 0, 238)
+
+primary variant: #3700B3  purble rgb(55, 0, 179)
+
+secondary: #03DAC6 rgb(3, 218, 198)
+
+secondary variant: #018786 rgb(1, 135, 134)
+
+Error: #B00020 
+
+*/
+
+/* Start Main */
+.main-color {
+    color: #6200EE
+}
+.txt-align-center {
+    text-align: center;
+}
+.normal-line-height {
+    line-height: 24px;
+}
+/* End Main */
+
+/* Start Upper Navbar */
+.upper-bar {
+    background-color: #f6f6f6;
+    padding: 0 10px;
+}
+.full-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo-main {
+    margin-bottom: 0;
+}
+.upper-bar-line-height {
+    line-height: 50px;
+    border-top: 1px solid lightgray;
+}
+.padding-33 {
+    padding-top: 3px;
+}
+
+.logo-main-span {
+    padding-left: 2px;
+    letter-spacing: 3.9px;
+}
+
+.border-left-a {
+    border-left: 1px solid lightgray;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.no-border-sm {
+    border-left: none;
+}
+.full-height {
+    height: 100%;
+}
+@media (min-width: 768px) {
+    .upper-bar-line-height {
+        line-height: 80px;
+        border: none;
+    }
+    .padding-33 {
+        padding-top: 18px;
+    }
+    .no-border-sm {
+        border-left: 1px solid lightgray;
+    }
+}
+/* End Upper Navbar */
+
+/* Start Main Navbar */
+nav {
+    background-color: #6200EE;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f6f6f6;
+}
+@media (min-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #f6f6f6;
+    color: #6200EE;
+}
+/* End Main Navbarr */
+
+/* Start Carousel */
+.slider .carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.slider .carousel-inner {
+    
+}
+.slider .carousel-inner h1 {
+    position: absolute;
+    color: #f6f6f6;
+    z-index: 2;
+    font-size: 40px;
+    max-width: 400px;
+    line-height: 1.4;
+}
+@media (min-width: 768px) {
+    .slider .carousel-inner h1 {
+        position: absolute;
+        color: #f6f6f6;
+        z-index: 2;
+        font-size: 60px;
+        max-width: 700px;
+        line-height: 1.4;
+        margin-left: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .slider .carousel-inner h1 {
+        margin-left: 10px; !important;
+    }
+}
+.slider .carousel-inner h1 span {
+    background-color: #03DAC6;
+    padding: 0 10px;
+}
+.slider .carousel-inner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5)
+}
+.slider .carousel-control-prev,
+.slider .carousel-control-next {
+    z-index: 3;
+}
+.slider .carousel-one {
+    background-image: url('../img/slide1.jpg');
+    background-position: 50% 60%
+}
+.slider .carousel-two {
+    background-image: url('../img/slide2.jpg');
+    background-position: right;
+}
+.slider .carousel-three {
+    background-image: url('../img/slide3.jpg');
+    background-position: 100% 80%;
+}
+/* End Carousel */
+
+/* Start Common Books */
+.common-books {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.common-books .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.common-books .card-body {
+    padding: 0;
+    border-top: 1px solid lightgray;
+}
+.common-books .card-img-top {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 450px;
+    background-position: 50% 50%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+@media (min-width: 768px) {
+    .common-books .card-img-top {
+	   filter: grayscale(10%);
+    }
+}
+/*IMG wrap*/
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.img-wrapper:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+.common-books .card:hover .img-wrapper:before {
+	left: -180%;
+}
+.common-books .card:hover .img-wrapper .card-img-top {
+    transform: scale(1.05);
+	filter: grayscale(0%);
+}
+/*IMG wrap End*/
+
+.ori-img {
+    background-image: url('../img/books/origions.PNG');
+}
+.power-img {
+    background-image: url('../img/books/The-power-of-habits.PNG');
+}
+.alch-img {
+    background-image: url('../img/books/the-alchemist.PNG');
+}
+.art-img {
+    background-image: url('../img/books/The-subtle-art.PNG');
+}
+.hist-img {
+    background-image: url('../img/books/a-short-history-of.PNG');
+}
+.btn-info {
+    background-color: #018786;
+}
+.add-to-cart {
+    color: #121212;
+}
+.add-cart {
+    border-left: 1px solid lightgray;
+}
+.add-cart:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: rgba(1, 135, 134, .2);
+}
+.add-cart:hover .add-to-cart {
+    color: #000;
+    font-size: 18px;
+    padding-top: 5px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+/* End Common Books */
+
+/* Start Our Blog */
+.blog .card-img-top {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    background-position: 50% 50%;
+}
+.blog .carousel-control-prev {
+    color: rgba(0, 0, 0, 40%)
+}
+.blog .carousel-control-next {
+    color: rgba(0, 0, 0, 40%)
+}
+.blog .carousel-control-prev:hover {
+    color: rgba(0, 0, 0, 60%)
+}
+.blog .carousel-control-next:hover {
+    color: rgba(0, 0, 0, 60%)
+}
+/* End Our Blog */
+
+/* Start Email */
+.e-mail {
+    background-color: #f9f9f9
+}
+/* End Email */
+
+/* Start Foot */
+.foot {
+    background-color: #000;
+    color: #f6f6f6
+}
+.foot .pay {
+    margin-left: 10px;
+    cursor: pointer;
+    filter: brightness(50%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.foot .pay:hover {
+    filter: brightness(80%)
+}
+.foot .pay-full > div{
+        margin-left: auto;
+}
+@media (max-width: 768px) {
+    .foot .pay-full > div{
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    .foot .pay {
+        margin-right: 10px;
+    }
+    .foot .copyright span {
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+/* End Foot */
+
+
+
+/* TRYYYYYYYYYYYYYY */
+
+@media (max-width: 768px) {
+    .blog .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .blog .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.blog .carousel-inner .carousel-item.active,
+.blog .carousel-inner .carousel-item-next,
+.blog .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .blog .carousel-inner .carousel-item-right.active,
+    .blog .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .blog .carousel-inner .carousel-item-left.active, 
+    .blog .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.blog .carousel-inner .carousel-item-right,
+.blog .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
