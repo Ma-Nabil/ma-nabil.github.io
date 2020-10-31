@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>  <!-- Mahmoud Nabil - Task 1 -->
+    <head>
+        <title>My Portofolio - HTML Training</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="ico.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="body">
+        <div class="container darken-background" style="overflow: hidden;">
+            <!-- Header -->
+            <header class="row align-items-start" style="">
+                <a class="col text-center" href="#calc" style="font-size: 64px;">Calculator</a>
+            </header>
+            <!-- End Header-->
+            
+            <div id="calc" class="row align-items-center calc">
+                <div class="col h-100">
+                    <div class="h-100" style="">
+                        <div class="row">
+                            <div id="screen" class="col px-5 py-2">
+                                0
+                            </div>
+                        </div>
+                        <div id="calc-buttons" class="row">
+                            <div class="col">
+                                <p class="clear-button text-center" >Clear All</p>  <!-- clear -->
+                                <p class="calc-button text-center" value="7">7</p>
+                                <p class="calc-button text-center" value="4">4</p>
+                                <p class="calc-button text-center" value="1">1</p>
+                                <p class="calc-button text-center" value="+_">&plusmn;</p>  <!-- change between - and + -->
+                            </div>
+                            <div class="col">
+                                <p class="no-button text-center" value="__">&#8730;<sub style="font-family: serif; font-size: 10px;">&#40;Comming Soon&#41;</sub></p>  <!-- gazr -->
+                                <p class="calc-button text-center" value="8">8</p>
+                                <p class="calc-button text-center" value="5">5</p>
+                                <p class="calc-button text-center" value="2">2</p>
+                                <p class="calc-button text-center" value="0">0</p>
+                            </div>
+                            <div class="col">
+                                <p class="calc-button text-center" value="**">&#40; &#41;<sup>x</sup></p>
+                                <p class="calc-button text-center" value="9">9</p>
+                                <p class="calc-button text-center" value="6">6</p>
+                                <p class="calc-button text-center" value="3">3</p>
+                                <p class="calc-button text-center" value=".">.</p>
+                            </div>
+                            <div class="col">
+                                <p class="calc-button text-center" value="/">&#xF7;</p>
+                                <p class="calc-button text-center" value="*">&times;</p>
+                                <p class="calc-button text-center" value="-">-</p>
+                                <p class="calc-button text-center" value="+">+</p>
+                                <p class="equal-button text-center" style="background-color: #BB86FC;">=</p> <!-- onclick -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="row align-items-end pt-2">
+                <p class="col text-center" style="text-decoration: line-through; font-family: serif; color: #ffffff; text-shadow: 0 0 1px black;">Copyrights &#169; 2020, eval&#40; &#41; is evil</p>
+            </footer>
+        </div>
+        <!-- Scripts -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
