@@ -36,7 +36,7 @@ header a:hover {
 .calc-button, .clear-button, .change-button {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: beige;
+    background-color: #ecf0f1;
     margin: 0;
     z-index: 1001;
     cursor: pointer;
