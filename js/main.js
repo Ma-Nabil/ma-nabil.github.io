@@ -1,11 +1,16 @@
 /*global window, $*/
 $(function () {
     "use strict";
-    // Adjust Slider Height
+    // Adjust Heights
     var winH = $(window).height(),
         navH = $('.navbar').innerHeight(),
-        upperH = $('.upper-bar').innerHeight();
-    $('.slider,.slider .carousel-item').height(winH - (navH + upperH));
+        upperH = $('.upper-bar').innerHeight(),
+        valuesH = $('.values').innerHeight(),
+        emailH = $('.get-height').innerHeight();
+    $('.slider,.slider .carousel-item, .story').height(winH - (navH + upperH));
+	$('.the-img').height(winH);
+	$('.bottom-img').height(winH - (valuesH));
+    $('.give-height').height(emailH);
 });
 
 $(function () {
@@ -16,31 +21,26 @@ $(function () {
         $('.slider-text').css("margin-left", carCP);
     }
 });
-$(function () {
-    "use strict";
-    // change email height
-    var emailH = $('.get-height').innerHeight();
-    $('.give-height').height(emailH);
-});
 
 
 $('#blog-slider').carousel({
   interval: 10000
-})
+});
 
-$('.blog .carousel .carousel-item').each(function(){
-    var minPSlide = 3;
-    var next = $(this).next();
+$('.blog .carousel .carousel-item').each(function () {
+    var minPSlide = 3,
+        next = $(this).next(),
+		i;
     if (!next.length) {
         next = $(this).siblings(':first');
     }
     next.children(':first-child').clone().appendTo($(this));
     
-    for (var i=0;i<minPSlide;i++) {
-        next=next.next();
+    for (i = 0; i < minPSlide; i++) {
+        next = next.next();
         if (!next.length) {
             next = $(this).siblings(':first');
         }
         next.children(':first-child').clone().appendTo($(this));
     }
-})
+});
