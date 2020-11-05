@@ -1,4 +1,11 @@
-
+.my-display {
+	font-size: 3rem;
+}
+@media (min-width: 768px) {
+	.my-display {
+		font-size: 4.5rem;
+	}
+}
 /* Story */
 
 .story {
