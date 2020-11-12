@@ -22,6 +22,9 @@ Error: #B00020
 .normal-line-height {
     line-height: 24px;
 }
+.black {
+	color: black;
+}
 /* End Main */
 
 /* Start Upper Navbar */
