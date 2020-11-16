@@ -25,19 +25,19 @@
         <!-- End logo -->
 		
 		<div class="my-reg-container p-5">
-			<form>
-				<label>Username</label><br/>
-				<input class="w-100 mb-3" type="text" required/><br/>
+			<form id="register-form">
+				<label>Username</label>
+				<input class="w-100" type="text" name="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[أ-يa-zA-Z0-9._]+(?<![_.])$" required/>
 				
-				<label>Email</label><br/>
-				<input class="w-100 mb-3" type="text" required/><br/>
+				<label>Email</label>
+				<input class="w-100" type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
 				
-				<label>Password</label><br/>
-				<input class="w-100 mb-3" type="text" required/><br/>
+				<label>Password</label>
+				<input class="w-100" type="password" name="password" pattern="^.{8,}$" autocomplete="off" required/>
 				
 				<p class="text-center">By clicking Join now, you agree to BookStore's <a href="#">User Agreement</a>.</p>
 				
-				<input class="w-100 btn btn-primary" type="submit"/>
+				<input class="w-100 btn btn-primary" type="submit" value="Register Now"/>
 			</form>
 			<hr>
 			<p class="text-center">Already in BookStore? <a href="#">Sign In</a></p>
@@ -50,5 +50,6 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/reg.js"></script>
     </body>
 </html>
