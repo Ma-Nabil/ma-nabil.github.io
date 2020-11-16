@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>...</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet"  type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/reg.css">
+        
+    </head>
+	<body>
+        
+        <!-- Start logo -->
+		<div class="main-header d-flex justify-content-center mb-2">
+			<a href="index.html">
+				<div class="full-logo">
+					<h1 class="logo-main">Book<span class="main-color">Store</span></h1>
+					<span class="logo-main-span">Books since 2020</span>
+				</div>
+			</a>
+		</div>
+        <!-- End logo -->
+		<!-- welcome -->
+		<div class="welcome d-flex justify-content-center mb-2">
+			<div>
+				<h3 class="text-center">Welcome Back</h3>
+				<p>Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
+			</div>
+		</div>
+		<!-- End Welcome -->
+		
+		<div class="my-reg-container p-5">
+			<form id="Login-form">
+				
+				<label>Email</label>
+				<input class="w-100" type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="example: myname@website.com" required/>
+				
+				<label>Password</label>
+				<input class="w-100" type="password" name="password" pattern="^.{8,}$" title="Password must be at least 8 characters" autocomplete="off" required/>
+				
+				<input class="w-100 btn btn-primary mt-4" type="submit" value="Log in"/>
+			</form>
+			<hr>
+			<p class="text-center">New member in BookStore? <a href="register.html">Join Now</a></p>
+		</div>
+		
+		<p class="text-center pt-3 main-color">BookStore corporation &copy; 2020</p>
+		
+	    <!-- Scripts -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/reg.js"></script>
+    </body>
+</html>
