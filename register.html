@@ -27,13 +27,13 @@
 		<div class="my-reg-container p-5">
 			<form id="register-form">
 				<label>Username</label>
-				<input class="w-100" type="text" name="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[أ-يa-zA-Z0-9._]+(?<![_.])$" required/>
+				<input class="w-100" type="text" name="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[أ-يa-zA-Z0-9._]+(?<![_.])$" title="Allowed: أ-ي & a-z & 0-9 & _ & ." required/>
 				
 				<label>Email</label>
-				<input class="w-100" type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+				<input class="w-100" type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="example: myname@website.com" required/>
 				
 				<label>Password</label>
-				<input class="w-100" type="password" name="password" pattern="^.{8,}$" autocomplete="off" required/>
+				<input class="w-100" type="password" name="password" pattern="^.{8,}$" title="Password must be at least 8 characters" autocomplete="off" required/>
 				
 				<p class="text-center">By clicking Join now, you agree to BookStore's <a href="#">User Agreement</a>.</p>
 				
