@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet"  type='text/css'>
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/cart.css">
         
     </head>
     <body>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-6 border-left-a">
                                 <div class="row normal-line-height align-items-center padding-33">
-									<div class="col-6"><a class="black" href="Cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a></div>
+                                    <div class="col-6"><i class="fa fa-shopping-cart fa-lg"></i></div>
                                     <div class="col-6 border-left-a"><span>0.00$</span></div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                             <a class="nav-link" href="#">Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                     </ul>
                     <button class="btn btn-dark ml-auto" onclick="">Switch theme</button>
@@ -101,79 +101,133 @@
             </div>
         </nav>
         <!-- End Main Navbar -->
-        
-		<!-- Start Story -->
-		<div class="story d-flex">
-			<div class="container-fluid align-self-center">
-				<div class="align-self-center px-3">
-					<h1 class="my-display">The <span class="pb-3">Story</span> Of Us</h1>
-					<br>
-					<p>We are a close team of creative professionals from Egypt. We are passionate about partnering with good people and organizations to provide exceptional custom solutions for readers.</p>
-				</div>
-			</div>
-		</div>
-		<!-- End Story -->
 		
-		<!-- What we do -->
-		<div class="py-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-md-6 d-flex pr-5 pb-3">
-						<div class="align-self-center">
-							<h2 class="text-uppercase display-4">What we do</h2>
-							<p>Our skills are specific and fine-tuned. We are specialists, not generalists. We build identities and experiences to elevate and <span class="main-color">empower readers</span>.</p>
+		<!-- Start items -->
+		<div class="row products-sell">
+			<div class="col-12 col-lg-8">
+				<div class="d-flex flex-column p-2">
+					
+					<div class="Total row border rounded hide-overflow"><!-- If There were Discount -->
+						<div class="col-2 visaa-img border-right"></div>
+						<div class="col-6">
+							<div class="pl-2">
+								<h4>Dicounted Price</h4>
+								<span class="text-secondary">When you complete your profile details you get 10% Discount!</span>
+							</div>
+						</div>
+						<div class="col-2 row">
+							<div class="col-6">
+								<p>Total</p>
+								<p class="border-bottom">Discount</p>
+								<p>After discount</p>
+							</div>
+							<div class="col-6">
+								<div>
+								<p class="pl-2">99.9$</p>
+								<p class="border-bottom pl-2">10$</p>
+								<p class="pl-2">89.9$</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-2 d-flex justify-content-center align-items-center">
+							<a href="#" class="btn btn-secondary ml-1">Apply!</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 the-img what-img"></div>
-				</div>
-			</div>
-		</div>
-		<!-- End what -->
-		
-		<!-- Why we do it -->
-		<div class="py-5 why-we">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-md-6 order-md-12 d-flex pl-5 pb-3">
-						<div class="align-self-center">
-							<h2 class="text-uppercase display-4">why we do it</h2>
-							<p>We believe in the power of reading. We thrive on building relationships and helping good people succeed through <span class="main-color">gaining knowledge and skills</span>.</p>
+					
+					<div class="border-top my-3"></div>
+					
+					<div class="all-products d-flex flex-column">
+						
+						<div class="my-product row mb-1">
+							<div class="col-2"></div>
+							<div class="col-6"></div>
+							<div class="col-2">Price</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">Quantity</div>
+						</div>
+						
+						<div class="my-product row border rounded hide-overflow mb-2">
+							<div class="col-2 power-img img-cover border-right"></div>
+							<div class="col-6">
+								<div class="pl-2 pr-2">
+									<a href="#"><div class="text-uppercase text-truncate">The Power of Habit: Why We Do What We Do in Life and Business</div></a>
+									<p class="text-secondary pb-2">Charles Duhigg</p>
+								</div>
+							</div>
+							<div class="col-2">9.99$</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">
+								<input class="w-75" min="0" max="20" type="number" value="1">
+							</div>
+						</div>
+						
+						<div class="my-product row border rounded hide-overflow mb-2">
+							<div class="col-2 alch-img img-cover border-right"></div>
+							<div class="col-6">
+								<div class="pl-2 pr-2">
+									<a href="#"><div class="text-uppercase text-truncate">The Alchemist: A Fable About Following Your Dream</div></a>
+									<p class="text-secondary pb-2">Paulo Coelho</p>
+								</div>
+							</div>
+							<div class="col-2">9.99$</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">
+								<input class="w-75" min="0" max="20" type="number" value="1">
+							</div>
+						</div>
+						
+						<div class="my-product row border rounded hide-overflow mb-2">
+							<div class="col-2 ori-img img-cover border-right"></div>
+							<div class="col-6">
+								<div class="pl-2 pr-2">
+									<a href="#"><div class="text-uppercase text-truncate">Origins: Fourteen Billion Years of Cosmic Evolution</div></a>
+									<p class="text-secondary pb-2">Neil deGrasse Tyson&#44; Donald Goldsmith</p>
+								</div>
+							</div>
+							<div class="col-2">9.99$</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">
+								<input class="w-75" min="0" max="20" type="number" value="1">
+							</div>
+						</div>
+						
+						<div class="my-product row border rounded hide-overflow mb-2">
+							<div class="col-2 art-img img-cover border-right"></div>
+							<div class="col-6">
+								<div class="pl-2 pr-2">
+									<a href="#"><div class="text-uppercase text-truncate">The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life</div></a>
+									<p class="text-secondary pb-2">Mark Manson</p>
+								</div>
+							</div>
+							<div class="col-2">9.99$</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">
+								<input class="w-75" min="0" max="20" type="number" value="1">
+							</div>
+						</div>
+						
+						<div class="my-product row border rounded hide-overflow mb-2">
+							<div class="col-2 hist-img img-cover border-right"></div>
+							<div class="col-6">
+								<div class="pl-2 pr-2">
+									<a href="#"><div class="text-uppercase text-truncate">A Short History of Nearly Everything</div></a>
+									<p class="text-secondary pb-2">Bill Bryson</p>
+								</div>
+							</div>
+							<div class="col-2">9.99&#36;</div>
+							<div class="col-2 d-flex justify-content-center align-items-center">
+								<input class="w-75" min="0" max="20" type="number" value="1">
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-6 the-img why-img"></div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4">
+				<div class="p-2">
+					<h2 class="text-center">Cart Total</h2>
+					<div class="border rounded p-2 my-checkout bg-light">
+						<h3 class="text-left mb-3">Subtotal &#40;<span class="items-no">5</span> Items&#41;: <span class="my-totalsub">99.9</span>&#36;</h3>
+						<input type="button" class="btn btn-warning px-5" value="Checkout">
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- End why -->
-		
-		<!--values -->
-		<div class="py-5">
-			<div class="container-fluid values">
-				<h2 class="text-center pb-5 display-3">Our core values</h2>
-				<div class="row">
-					<div class="col"><span>Customer centeric</span></div>
-					<div class="col"><span>Reliable</span></div>
-					<div class="col"><span>Better Every day</span></div>
-					<div class="col"><span>One step ahead</span></div>
-					<div class="col"><span>Honest</span></div>
-				</div>
-			</div>
-		</div>
-		<!-- End values -->
-		
-		<div class="bottom-img the-img">
-			<!-- Img to go to chat -->
-		</div>
-		
-		<!-- Chat -->
-		<div class="chat">
-			<div class="container-fluid text-center py-5">
-				<h4 class="mb-5">So whats next&#63;</h4>
-				<h2 class="text-uppercase mb-5">Want to <span class="main-color">reach</span> out!</h2>
-				<span>Mo@example.com</span>
-			</div>
-		</div>
-		<!-- End chat -->
+		<!-- End Items -->
 		
         <!-- Start Final Footer -->
         <div class="foot">
@@ -193,7 +247,6 @@
             </div>
         </div>
         <!-- End Footer -->
-		
         <!-- Scripts -->
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/popper.min.js"></script>

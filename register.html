@@ -27,7 +27,7 @@
 		<div class="my-reg-container p-5">
 			<form id="register-form">
 				<label>Username</label>
-				<input class="w-100" type="text" name="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[أ-يa-zA-Z0-9._]+(?<![_.])$" title="Allowed: أ-ي & a-z & 0-9 & _ & ." required/>
+				<input class="w-100" type="text" name="username" pattern="^(?=[\u0621-\u064Aa-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" title="Allowed: أ-ي & a-z & 0-9 & _ & ." required/>
 				
 				<label>Email</label>
 				<input class="w-100" type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="example: myname@website.com" required/>
