@@ -1,0 +1,36 @@
+.visaa-img {
+	background-image: url("../img/pay/visaa.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.img-cover {
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+p {
+	margin-bottom: 1px;
+}
+
+.my-checkout {
+	text-align: center;
+}
+
+.products-sell .col, .products-sell .col-1, .products-sell .col-10, .products-sell .col-11, .products-sell .col-12, .products-sell .col-2, .products-sell .col-3, .products-sell .col-4, .products-sell .col-5, .products-sell .col-6, .products-sell .col-7, .products-sell .col-8, .products-sell .col-9, .products-sell .col-auto, .products-sell .col-lg, .products-sell .col-lg-1, .products-sell .col-lg-10, .products-sell .col-lg-11, .products-sell .col-lg-12, .products-sell .col-lg-2, .products-sell .col-lg-3, .products-sell .col-lg-4, .products-sell .col-lg-5, .products-sell .col-lg-6, .products-sell .col-lg-7, .products-sell .col-lg-8, .products-sell .col-lg-9, .products-sell .col-lg-auto, .products-sell .col-md, .products-sell .col-md-1, .products-sell .col-md-10, .products-sell .col-md-11, .products-sell .col-md-12, .products-sell .col-md-2, .products-sell .col-md-3, .products-sell .col-md-4, .products-sell .col-md-5, .products-sell .col-md-6, .products-sell .col-md-7, .products-sell .col-md-8, .products-sell .col-md-9, .products-sell .col-md-auto, .products-sell .col-sm, .products-sell .col-sm-1, .products-sell .col-sm-10, .products-sell .col-sm-11, .products-sell .col-sm-12, .products-sell .col-sm-2, .products-sell .col-sm-3, .products-sell .col-sm-4, .products-sell .col-sm-5, .products-sell .col-sm-6, .products-sell .col-sm-7, .products-sell .col-sm-8, .products-sell .col-sm-9, .products-sell .col-sm-auto, .products-sell .col-xl, .products-sell .col-xl-1, .products-sell .col-xl-10, .products-sell .col-xl-11, .products-sell .col-xl-12, .products-sell .col-xl-2, .products-sell .col-xl-3, .products-sell .col-xl-4, .products-sell .col-xl-5, .products-sell .col-xl-6, .products-sell .col-xl-7, .products-sell .col-xl-8, .products-sell .col-xl-9, .products-sell .col-xl-auto { padding: 0;}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.products-sell .container, .products-sell .container-fluid, .products-sell .container-lg, .products-sell .container-md, .products-sell .container-sm, .products-sell .container-xl {
+    padding-right: 0;
+    padding-left: 0;
+}
+.hide-overflow {
+	overflow: hidden;
+}
